@@ -2,8 +2,8 @@
 
 ### Aug. 27:
 Before starting, make sure you have a python environment with Pybullet. (Pybullet: https://pybullet.org/wordpress/)
-Read and run the code env.py provided in this repo.
 
+Read and run the code env.py provided in this repo.
 
 Design a Controller for this robot to move forward.
 You can use any algorithm you like.
