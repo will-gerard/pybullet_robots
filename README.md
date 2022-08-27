@@ -1,14 +1,14 @@
 # Assignment0: pybullet_robots
 
-### Aug. 27:
-Before starting, make sure you have a python environment with Pybullet. (Pybullet: https://pybullet.org/wordpress/)
+## Aug. 27:
+**Before starting, make sure you have a python environment with Pybullet. (Pybullet: https://pybullet.org/wordpress/)**
 
-Read and run the code env.py provided in this repo.
+Please read and run the code env.py provided in this repo first.
 
-Design a Controller for this robot to move forward.
-You can use any algorithm you like.
+Design a Controller for this robot to move forward. You can use any algorithm you like :)
 
-Extra credit：
+**Extra credit：**
+
 Control the robot to turn left, turn right and move backward.
 
 
