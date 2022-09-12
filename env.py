@@ -142,7 +142,6 @@ def step_right(env: Robo_env, starting_joint_positions: List[float]):
     desired_joint_positions = env.push_off_ground_with_leg(leg_index = 2, curr_joint_positions=starting_joint_positions)
     env.step(desired_joint_positions)
 
-
     desired_joint_positions = env.drop_leg(leg_index=0, curr_joint_positions=desired_joint_positions)
     env.step(desired_joint_positions)
     desired_joint_positions = env.push_off_ground_with_leg(leg_index = 1, curr_joint_positions=starting_joint_positions)
@@ -216,23 +215,6 @@ if __name__ == '__main__':
     c = 0
     action_list = env1.initial_action
     while 1:
-        # action_list = [str(float(x)+.1) if ind == 11 else x for ind, x in enumerate(action_list)]
-        # env1.step(action_list)
         c += 1
         action_list = step_right(env=env1, starting_joint_positions=action_list)
         action_list = step_left(env=env1, starting_joint_positions=action_list)
-
-        # action_list = env1.lift_leg(leg_index=3, curr_joint_positions=action_list)
-        # env1.step(action_list)
-        # action_list = env1.move_leg_forward(leg_index=3, curr_joint_positions=action_list)
-        # env1.step(action_list)
-        # action_list = env1.drop_leg(leg_index=3, curr_joint_positions=action_list)
-        # env1.step(action_list)
-        # action_list = env1.push_off_ground_with_leg(leg_index=3, curr_joint_positions=action_list)
-        # env1.step(action_list)
-        # while float(action_list[11]) > -2.5:
-        #     action_list = env1.lift_leg(leg_index=3, curr_joint_positions=action_list)
-        #     env1.step(action_list)
-        # while float(action_list[11]) < -1.0:
-        #     action_list = env1.drop_leg(leg_index=3, curr_joint_positions=action_list)
-        #     env1.step(action_list)
